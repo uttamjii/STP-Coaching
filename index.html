@@ -6,6 +6,7 @@
     <title>STP Coaching Website</title>
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/dailogBox.css" />
     <!-- Optional: link to CSS -->
   </head>
   <body>
@@ -18,9 +19,11 @@
         <div class="hamburger">
           <img src="./images/hamburger.png" alt="Menu" />
         </div>
-        
+
         <ul class="navLinks">
-          <div class="close"><img src="./images/close.png" alt="Close" srcset=""></div>
+          <div class="close">
+            <img src="./images/close.png" alt="Close" srcset="" />
+          </div>
           <li><a href="#" class="navLink">Home</a></li>
           <li><a href="#aboutSection" class="navLink">About</a></li>
           <li><a href="#contactSection" class="navLink">Contact</a></li>
@@ -162,24 +165,48 @@
       </p>
       <form class="contactForm">
         <label for="firstName">First Name</label>
-        <input id="firstName" type="text" placeholder="First Name" required />
+        <input
+          id="firstName"
+          name="firstName"
+          type="text"
+          placeholder="First Name"
+          required
+        />
 
         <label for="lastName">Last Name</label>
-        <input id="lastName" type="text" placeholder="Last Name" required />
+        <input
+          id="lastName"
+          name="lastName"
+          type="text"
+          placeholder="Last Name"
+          required
+        />
 
-        <label for="phoneNumber">Phone Number</label>
+        <label for="phoneNumber" name="phoneNumber">Phone Number</label>
         <input
           id="phoneNumber"
           type="tel"
           placeholder="Phone Number"
           required
+          name="phoneNumber"
         />
 
         <label for="email">Email</label>
-        <input id="email" type="email" placeholder="Your Email" required />
+        <input
+          id="email"
+          type="email"
+          placeholder="Your Email"
+          required
+          name="email"
+        />
 
         <label for="message">Message</label>
-        <textarea id="message" placeholder="Your Message" required></textarea>
+        <textarea
+          id="message"
+          placeholder="Your Message"
+          required
+          name="message"
+        ></textarea>
 
         <button type="submit" class="submitButton">Submit</button>
       </form>
@@ -248,6 +275,34 @@
         </div>
       </div>
     </footer>
+
+    <!-- A Dailog box which shows form data for  last conformation   -->
+    <section class="containDailogbox">
+      <section id="formDataDialog">
+        <!-- Re-check -->
+        <h2 class="dailogBoxHeading">Form Data Recheck</h2>
+        <div class="recheckFirstName boxAroundRecheck">
+          <p>First Name : <span class="putFirstName">.....</span></p>
+        </div>
+        <div class="recheckLastName boxAroundRecheck">
+          <p>Last Name : <span class="putLastName">....</span></p>
+        </div>
+        <div class="recheckPhoneNumber boxAroundRecheck">
+          <p>Phone Number : <span class="putPhoneNumber">....</span></p>
+        </div>
+        <div class="recheckEmail boxAroundRecheck">
+          <p>Email : <span class="putEmail">.....</span></p>
+        </div>
+        <div class="recheckMessage boxAroundRecheck">
+          <p>Message</p>
+          <h3 class="putMessage">....</h3>
+        </div>
+        <div class="dialogButtons">
+          <button id="editButton" class="button">Edit</button>
+          <button id="confirmButton" class="button">Confirm</button>
+        </div>
+      </section>
+    </section>
 
     <script src="/js/index.js"></script>
   </body>
