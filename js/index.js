@@ -62,12 +62,12 @@ form.addEventListener("submit", function (e) {
 
 // Function to handle edit button click
 editButton.addEventListener("click", () => {
-  dialogBox.style.top = "-100%";
+  dialogBox.style.top = "-700%";
 });
 
 // Function to handle confirm button click
 confirmButton.addEventListener("click", () => {
-  dialogBox.style.top = "-100%";
+  dialogBox.style.top = "-700%";
   alert("Form submitted successfully!");
   form.reset(); // Reset the form after confirmation
 }); 

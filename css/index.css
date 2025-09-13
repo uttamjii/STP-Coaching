@@ -117,6 +117,7 @@ nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.9s ease;
 }
 .imageOverlay {
   display: flex;

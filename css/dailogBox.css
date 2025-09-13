@@ -1,7 +1,7 @@
 .containDailogbox {
   position: absolute;
   z-index: 13;
-  top: -100%;
+  top: -700%;
   left: 0;
 
   width: 100%;
