@@ -8,11 +8,13 @@
   font-family: "Segoe UI", Arial, sans-serif;
   scroll-behavior: smooth;
 }
+
 body,
 html {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
+  overflow-y: auto;
 }
 img {
   width: 100%;
@@ -76,7 +78,6 @@ nav ul {
   text-shadow: 2px 2px 4px #aaa;
   transition: all 0.5s ease;
 }
-
 
 /* Mian section Css stated 👇👇 */
 
@@ -345,7 +346,7 @@ CONTACT US Section Css 👇👇 */
 }
 
 .contactForm {
-    margin-left: 3rem;
+  margin-left: 3rem;
   /* border: 2px solid brown; */
   width: 100%;
   /* height: 80vh; */
@@ -473,7 +474,6 @@ footer {
 
 /* footer section 2 */
 
-
 footer > div {
   /* border: 2px solid rgb(49, 40, 40); */
   padding: 1rem 2rem;
@@ -548,11 +548,26 @@ footer p {
 
 .copyrightSection {
   width: 100%;
-  
+
   margin-top: 8rem;
   margin-bottom: 4rem;
   border-top: 1px solid rgb(103, 101, 101);
   padding-top: 1rem;
+}
+
+/* Scroll Up button */
+.scrollUpButton {
+  position: absolute;
+  z-index: 10;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+}
+.scrollUpButton:hover {
+  transform: scale(1.2);
+  transition: all 0.8s ease;
 }
 
 /* Universal Styling Classess */
