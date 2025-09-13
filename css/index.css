@@ -1,0 +1,552 @@
+/* Universal Css */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Css for Editing */
+/* .border {
+  border: 2px solid red;
+} */
+
+/* Header Css started ❤️❤️👇 */
+header {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 10px 2px 4px rgba(214, 102, 102, 0.1);
+}
+
+.logo {
+  font-size: 1.8rem;
+  text-shadow: 2px 2px 4px #aaa;
+}
+
+.navLink {
+  color: #3c4145;
+  font-size: 1.1rem;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  /* text-shadow removed or add a value like: */
+  text-shadow: 1px 1px 2px #aaa;
+}
+
+.navLink:hover {
+  color: #848080;
+  text-shadow: 2px 2px 4px #aaa;
+  transition: all 0.5s ease;
+}
+/* Mian section Css stated 👇👇 */
+
+.mainSeciton {
+  /* border: 2px solid blue; */
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subHeading {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.mainHeading {
+  font-size: 5rem;
+  /* border: 2px solid green; */
+  width: 80%;
+  color: #222;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Background Image Section Css 👇👇 */
+
+.imageSection {
+  width: 100%;
+  height: 80vh;
+  background: fixed no-repeat center/cover url("../images/bgSection.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imageOverlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.quote {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+  padding: 0 2rem;
+  translate: 0 -50%;
+}
+
+/* ABOUT SECTION CSS 👇👇 */
+
+.aboutSection {
+  width: 100%;
+  height: 90vh;
+}
+
+.aboutSectionHeading {
+  font-size: 2.8rem;
+  /* border-bottom: 1px solid rgb(103, 101, 101); */
+  width: 100%;
+  height: 15vh;
+  padding: 2rem;
+  color: #333;
+  text-shadow: 2px 2px 4px #aaa;
+}
+
+.aboutSectionContainer {
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.aboutImage {
+  /* border: 2px solid rgb(60, 59, 58); */
+  width: 40%;
+  height: 80%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.aboutContent {
+  /* border: 2px solid orange; */
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.aboutContent p {
+  width: 80%;
+  font-size: 1.5rem;
+  line-height: normal;
+  color: #555;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Program Section Css 👇👇 */
+
+.programSection {
+  width: 100%;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.programSectionHeading {
+  text-align: center;
+  font-size: 2.8rem;
+  border-bottom: 1px solid rgb(103, 101, 101);
+  width: 100%;
+  height: 15vh;
+  padding: 2rem;
+  color: #333;
+  text-shadow: 2px 2px 4px #aaa;
+}
+
+.programCardsContainer {
+  width: 100%;
+  height: 85vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1.5rem;
+  padding: 2rem;
+
+  /* border: 2px solid purple; */
+  justify-items: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  /* justify-content: center;
+
+    align-items: center; */
+}
+.programCard {
+  width: 80%;
+  height: 100%;
+  /* background-color: #fff; */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+.programCard > h3 {
+  color: #222;
+  font-size: 1.5rem;
+}
+.programCard > p {
+  color: #444;
+  text-align: center;
+  line-height: 1.4;
+  font-weight: 400;
+}
+.programCard:hover {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+  transition: all 0.6s ease;
+}
+
+/* 
+PHILOSOPHY Section Css 👇👇 */
+
+.philosophySection {
+  width: 100%;
+  height: 70vh;
+}
+
+.philosophySectionHeading {
+  font-size: 2.8rem;
+  border-bottom: 1px solid rgb(103, 101, 101);
+  width: 100%;
+  height: 15vh;
+  padding: 2rem;
+  color: #333;
+  text-shadow: 2px 2px 4px #aaa;
+}
+.philosophySubHeading {
+  width: 100%;
+  /* height: 10vh; */
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  margin-left: 3rem;
+  /* border: 2px solid teal; */
+}
+
+.philosophyContainer {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  /* border: 2px solid teal; */
+}
+.philosophyCard {
+  width: 50%;
+  height: 100%;
+  /* background-color: #fff; */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+  text-align: center;
+  /* border: 2px solid teal; */
+}
+
+.philosophyButton {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 
+CONTACT US Section Css 👇👇 */
+
+.contactSection {
+  width: 100%;
+  /* height: 95vh; */
+  background-color: #f9f9f9;
+}
+.contactSectionHeading {
+  font-size: 2.8rem;
+  border-bottom: 1px solid rgb(103, 101, 101);
+  width: 100%;
+  height: 15vh;
+  padding: 2rem;
+  color: #333;
+  text-shadow: 2px 2px 4px #aaa;
+}
+.contactSectionSubHeading {
+  width: 100%;
+  /* height: 10vh; */
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  margin-left: 3rem;
+}
+
+.contactForm {
+    margin-left: 3rem;
+  /* border: 2px solid brown; */
+  width: 100%;
+  /* height: 80vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contactForm label {
+  font-size: 1.2rem;
+  margin: 0.5rem 2rem;
+  color: #333;
+}
+.contactForm input,
+.contactForm textarea {
+  width: 60%;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 2rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.contactForm input:focus,
+.contactForm textarea:focus {
+  outline: none;
+  border-color: #777;
+}
+
+.contactForm textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.contactForm button {
+  margin: 1rem 2rem;
+  background-color: #4caf50;
+
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contactForm button:hover {
+  background-color: #45a049;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(-1px);
+  transition: all 0.7s ease;
+}
+
+/* footer Css 👇👇 */
+footer {
+  width: 100%;
+  min-height: 90vh;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* border: 2px solid black; */
+}
+
+/* footer section 1 */
+
+.footerSection1 {
+  /* border: 2px solid rgb(49, 40, 40); */
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.footerHeading {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.footerSection1 p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+}
+
+.footerMap {
+  width: 70%;
+  height: 40vh;
+  margin-left: 2rem;
+  /* border: 2px solid rgb(49, 40, 40); */
+  border-radius: 10px;
+}
+.footerSocial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  /* border: 2px solid rgb(49, 40, 40); */
+}
+
+.footerSocial a {
+  width: auto;
+  height: auto;
+  margin-right: 1rem;
+  /* border: 2 px solid rgb(49, 40, 40); */
+  cursor: pointer;
+  padding: 0.2rem;
+}
+.footerSocial a img {
+  /* border: 2 px solid rgb(49, 40, 40); */
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  padding: 0.2rem;
+}
+
+.footerSocial a img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+/* footer section 2 */
+
+
+footer > div {
+  /* border: 2px solid rgb(49, 40, 40); */
+  padding: 1rem 2rem;
+}
+
+.footerS2Heading {
+  margin-top: 3rem;
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px #aaa;
+}
+
+footer p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+.footerS2Content {
+  margin-left: 3rem;
+}
+.footerForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.footerForm label {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  color: #333;
+}
+.footerForm input {
+  width: 80%;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.footerForm input:focus {
+  outline: none;
+  border-color: #777;
+}
+
+.checkboxContainer input {
+  margin-right: 0.5rem;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.footerForm button {
+  margin: 1rem 0;
+  background-color: #4caf50;
+
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.footerForm button:hover {
+  background-color: #45a049;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(-1px);
+  transition: all 0.7s ease;
+}
+
+.copyrightSection {
+  width: 100%;
+  
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+  border-top: 1px solid rgb(103, 101, 101);
+  padding-top: 1rem;
+}
+
+/* Universal Styling Classess */
+
+.button {
+  padding: 0.8rem 1.5rem;
+  color: #000000;
+
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.button:hover {
+  background-color: #f0f0f0;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(-1px);
+  transition: all 0.7s ease;
+  color: #777474;
+}
