@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>STP Coaching Website</title>
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
     <!-- Optional: link to CSS -->
   </head>
   <body>
@@ -14,15 +15,12 @@
         <h1 class="logo">STP Coaching</h1>
       </div>
       <nav>
-        <ul
-          style="
-            display: flex;
-            gap: 24px;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-          "
-        >
+        <div class="hamburger">
+          <img src="./images/hamburger.png" alt="Menu" />
+        </div>
+        
+        <ul class="navLinks">
+          <div class="close"><img src="./images/close.png" alt="Close" srcset=""></div>
           <li><a href="#" class="navLink">Home</a></li>
           <li><a href="#aboutSection" class="navLink">About</a></li>
           <li><a href="#contactSection" class="navLink">Contact</a></li>
@@ -233,7 +231,7 @@
               style="margin-bottom: 8px"
             />
 
-            <div class="checkboxContainer" >
+            <div class="checkboxContainer">
               <input type="checkbox" name="yes" id="" />
               <label for="yes">Yes, subscribe me to your newsletter.</label>
             </div>
@@ -242,12 +240,11 @@
           </form>
 
           <div class="copyrightSection">
-
-              <p>Privacy Policy Accessibility Statement</p>
-              <p class="footerNote">
-                  &copy; 2024 STP Coaching. All rights reserved.
-                </p>
-            </div>
+            <p>Privacy Policy Accessibility Statement</p>
+            <p class="footerNote">
+              &copy; 2024 STP Coaching. All rights reserved.
+            </p>
+          </div>
         </div>
       </div>
     </footer>

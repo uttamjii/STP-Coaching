@@ -1,0 +1,125 @@
+@media screen and (max-width: 768px) {
+  /* Universal Css for chaning font size */
+  * {
+    font-size: 10px;
+  }
+
+  /* Hamburger Menu or Header Css  */
+  .hamburger {
+    display: block;
+  }
+  .close {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    padding: 10px;
+  }
+  nav ul {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    left: -100%;
+    transition: all 0.3s ease;
+    background-color: #fffbfb;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .navLink {
+    font-size: 2.5rem;
+    padding: 10px;
+  }
+}
+
+/* Next Responsive Design Break Point */
+@media screen and (max-width: 480px) {
+  /* Universal Css for chaning font size */
+  * {
+    font-size: 8px;
+  }
+
+  .mainHeading{
+    font-size: 4rem;
+  }
+
+
+
+
+  /* About section Css */
+  .aboutSectionContainer {
+    flex-direction: column;
+    text-align: center;
+    /* border: 2px solid red; */
+  }
+  .aboutSectionContainer div {
+    width: 100%;
+  }
+
+  /* Our program section css */
+  .programCardsContainer {
+    height: auto;
+    /* border: 2px solid blue; */
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+  }
+
+  .programCard > h3 {
+    font-size: 2.5rem;
+  }
+  .programCard > p {
+    font-size: 1.5rem;
+  }
+
+  /* our Philosophy Section css */
+    .philosophySection{
+        height: auto;
+        padding: 20px 0;
+    }
+    .philosophyContainer {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .philosophyCard {
+        width: 90%;
+    }
+
+    .philosophyButton{
+        /* border: 2px solid red; */
+       height: auto;
+    }
+
+    /* Contact Section Css */
+    .contactSectionSubHeading{
+        margin-left: 1px;
+    }
+    .contactForm{
+        margin-left: 1rem;
+    }
+    .contactForm input, .contactForm textarea{
+        width: 80%;
+    }
+
+    /* footer section responsive css */
+    footer{
+        
+        grid-template-columns: 1fr;
+    }
+    .footerMap{
+        width: 90%;
+        margin-left: 1rem;
+    }
+
+    .footerS2Content{
+        margin-left: 1rem;
+    }
+}
