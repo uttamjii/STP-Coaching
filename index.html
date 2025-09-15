@@ -25,17 +25,26 @@
             <img src="./images/close.png" alt="Close" srcset="" />
           </div>
           <li><a href="#" class="navLink" id="homeLink">Home</a></li>
-          <li><a href="#aboutSection" class="navLink" id="aboutLink" >About</a></li>
-          <li><a href="#contactSection" class="navLink" id="contactLink" >Contact</a></li>
+          <li>
+            <a href="#aboutSection" class="navLink" id="aboutLink">About</a>
+          </li>
+          <li>
+            <a href="#contactSection" class="navLink" id="contactLink"
+              >Contact</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
 
     <!-- Main Section  -->
     <section class="mainSeciton">
-      <h3 class="subHeading">Empowering Students in the Digital Era</h3>
+      <h3 class="subHeading">
+        <span id="typed"></span>
+        <!-- Empowering Students in the Digital Era -->
+      </h3>
       <h1 class="mainHeading">MASTER PROGRAMMING SKILLS</h1>
-      <button class="button">Explore Courses</button>
+      <a class="button" href="#programSection">Explore Courses</a>
     </section>
 
     <!-- A Background Image Section with a Quote -->
@@ -57,7 +66,7 @@
           <img src="/images/aboutSection.jpg" alt="About Us Image" />
         </div>
         <div class="aboutContent">
-          <p>
+          <p class="aboutText">
             At STP Coaching, we are dedicated to providing top-notch programming
             education to students of all levels. Our mission is to empower
             learners with the skills and knowledge they need to excel in the
@@ -69,7 +78,7 @@
     </section>
 
     <!--  OUR PROGRAMS  Section -->
-    <section class="programSection">
+    <section class="programSection" id="programSection">
       <h2 class="programSectionHeading">Our Programs</h2>
       <div class="programCardsContainer">
         <div class="programCard">
@@ -303,14 +312,18 @@
         </div>
       </section>
     </section>
-
-
+    <!-- GSAP CDN Script Link -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script> -->
 
     <!-- Scroll Up button -->
-    <div class="scrollUpButton" >
+    <div class="scrollUpButton">
       <img src="./images/scrollUp.png" alt="Scroll Up" />
     </div>
 
+    <!-- Typed.js CDN Script Link -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Raw js file add -->
     <script src="/js/index.js"></script>
   </body>
 </html>

@@ -24,6 +24,41 @@ const confirmButton = document.getElementById("confirmButton");
 // target Scroll Up button
 const scrollUpButton = document.querySelector(".scrollUpButton");
 
+//Typed Behavior ADDED in main section
+
+var typed = new Typed("#typed", {
+  strings: ["Empowering Students in the Digital Era"],
+  typeSpeed: 60, // typing speed
+  backSpeed: 30, // backspacing speed
+  startDelay: 500, // delay before typing starts
+  loop: true, // set true if you want it to repeat
+});
+
+// GSAP Animation Effects
+
+
+function animateClass(className, delay) {
+  gsap.from(className, {
+    opacity: 0,
+    y: -50,
+    duration: 1,
+    ease: "power3.out",
+    delay: delay,
+
+  });
+}
+
+animateClass(".logo", 0.2);
+animateClass(".hamburger", 0.4);
+animateClass(".mainHeading", 0.6);
+animateClass(".subHeading", 0.8);
+animateClass(".button", 1.0);
+
+
+
+// GSAP Scroll Trigger Animations
+
+
 // Function to toggle the navigation menu
 
 hamburger.addEventListener("click", () => {
@@ -89,26 +124,29 @@ confirmButton.addEventListener("click", () => {
 
 // Scroll Up button
 
-window.addEventListener("scroll", () => { 
+window.addEventListener("scroll", () => {
   console.log("Scrolled");
 });
-window.onscroll = function() {
+window.onscroll = function () {
   console.log("Scrolled");
 };
 
-document.onscroll = function() {
+document.onscroll = function () {
   console.log("Scrolled");
-}
+};
 
 const body = document.querySelector("body");
-body.onscroll = function() {
+body.onscroll = function () {
   console.log("Scrolled");
-}
+};
 
 console.log(
-  'scrollHeight', document.documentElement.scrollHeight,
-  'innerHeight', window.innerHeight,
-  'canScroll?', document.documentElement.scrollHeight > window.innerHeight
+  "scrollHeight",
+  document.documentElement.scrollHeight,
+  "innerHeight",
+  window.innerHeight,
+  "canScroll?",
+  document.documentElement.scrollHeight > window.innerHeight
 );
 console.log(document.documentElement.scrollHeight, window.innerHeight);
 
@@ -116,11 +154,11 @@ window.addEventListener("scroll", () => {
   console.log("Scrolled Y:", window.scrollY);
 });
 
-  // if (window.scrollY > 300) {
-  //   scrollUpButton.style.bottom = "80px";
-  // } else {
-  //   scrollUpButton.style.bottom = "-80px";
-  // }
+// if (window.scrollY > 300) {
+//   scrollUpButton.style.bottom = "80px";
+// } else {
+//   scrollUpButton.style.bottom = "-80px";
+// }
 
 scrollUpButton.addEventListener("click", (e) => {
   document.body.scrollTop = 0; // For Safari
